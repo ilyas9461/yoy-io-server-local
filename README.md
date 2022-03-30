@@ -9,7 +9,7 @@ Two things are aimed with this study;
 
 In addition, there is a similar one that works on the server to share over the cloud. It has been designed in this way so that the system can continue to work in case of internet disconnection.
 
-This information could be:
+This informations could be:
 - The amount of coins available on the contactless card.
 - Where and when the contactless card is used.
 - Customer information of the contactless card.

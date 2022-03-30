@@ -2,8 +2,6 @@ const express = require("express");
 const { createServer } = require("http");
 const { Server } = require("socket.io");
 const cors = require("cors");
-//const pgSqlDB = require("./public/js/db_class");
-
 const { userJoin, getCurrentUser, userLeave, getRoomUsers, getUserRoom } = require("./public/js/socket_users");
 
 const bodyParser = require("body-parser");
@@ -18,16 +16,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 const httpServer = createServer(app);
-
-/* client request  operation*/
-
-// app.get("/", (req, res) => {
-//   // res.set('Access-Control-Allow-Origin', '*');
-//   res.send(new Date().toString() + " node server running on port 3000");
-// });
-
-// app.use("/user", require("./routers/users/User.js"));
-// app.use("/data", require("./routers/data/Data.js"));
 
 /* socket operation */
 
